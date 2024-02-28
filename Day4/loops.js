@@ -155,4 +155,61 @@ console.log(combinedArr);
   ]
   */
 
-  
+
+let duplicates = [1, 2, 2, 3, 4, 4, 5];
+let copy = [...new Set(duplicates)]; // this will remove the duplicates to contain a copy withoutn repetitions.
+console.log(duplicates);
+console.log(copy);
+
+let green = [1, "wait for me" ]
+let greenmixed = green.join(", ");
+console.log(greenmixed);
+
+// finding the maximun number in an array
+
+let maxNumber = Math.max(1590,48,5,778,8);
+console.log(maxNumber);
+
+let helloArray = "Hello, World!".split(""); //this will display the string in a form of array.
+console.log(helloArray);
+/* the output should look like this
+[
+  'H', 'e', 'l', 'l',
+  'o', ',', ' ', 'W',
+  'o', 'r', 'l', 'd',
+  '!'
+]
+*/
+
+let reversedArray = helloArray.reverse(); // this work like split above, but it will display the output in reverse.
+console.log(reversedArray);
+
+let reversedString = reversedArray.join("");
+console.log(reversedString); // the output is something like this: !dlroW ,olleH
+
+// let sentence = "I love JavaScript JavaScript is awesome!";
+// let wordCount = sentence.split(" ").reduce((acc, word) => {
+//   acc[word] = (acc[word] || 0) + 1;
+//   return acc;
+// }, {});                             i don't understand? count the occurance
+
+
+
+// ARRAY AND OBJECTS 
+
+//converting object into array
+let userObject = { id: 1, name: "John", age: 25 };
+let userArray = Object.entries(userObject);
+console.log(userArray);
+/* this is wthat we get: [ [ 'id', 1 ], [ 'name', 'John' ], [ 'age', 25 ] ]*/
+
+let theArray = [["name", "Alice"], ["age", 30], ["city", "New York"]];
+let theObject = Object.fromEntries(theArray);
+console.log(theObject); /*this will do the inverse of the previous opertation 
+                          (it will creat an object from an array) */
+// merging 2 objects
+
+let object1 = { a: 1, b: 2 };
+let object2 = { b: 3, c: 4 };
+let mergedObject = { ...object1, ...object2 };
+console.log(mergedObject); //why in the output we don't have the b:2? 

@@ -73,6 +73,6 @@ let age = 12;
 console.log(str * age) /* ntabwo string ngo iraba recognized cs it is not a number 
                           so it will return NaN.*/
 
-                        //nushyiramo boolean value, then it will return only the "age"
+                        //nushyiramo boolean value, then it will return only the "age" value.
 
 

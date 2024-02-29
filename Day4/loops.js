@@ -190,8 +190,8 @@ console.log(reversedString); // the output is something like this: !dlroW ,olleH
 // let sentence = "I love JavaScript JavaScript is awesome!";
 // let wordCount = sentence.split(" ").reduce((acc, word) => {
 //   acc[word] = (acc[word] || 0) + 1;
-//   return acc;
-// }, {});                             i don't understand? count the occurance
+//   consol.log(acc);
+// }, {});                            // i don't understand? count the occurance of words
 
 
 
